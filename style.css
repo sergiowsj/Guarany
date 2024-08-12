@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #E6E6E6;
+    --bg-box: #F8AE15;
+    --highlight: #E34E05;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 6rem;
+    background-image: url(/assets/img/fundo-testeira.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    
+}
+
+.logo1 {
+    width: 12rem;
+    height: auto;
+    
+}
+
+.logo2 {
+    width: 5rem;
+    height: auto;
+    margin-left: 10rem;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 26rem;
+    margin: auto;
+    margin-top: 2.0rem;
+    font-size: 1rem;
+    line-height: 1.55rem;
+    font-weight: bold;
+}
+
+span {
+    color: var(--highlight);
+    font-weight: bolder;
+}
+
+#box {
+    background-color: var(--bg-box);
+    width: 26rem;
+    height: 4rem;
+    border-radius: .3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 26rem;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.mainBox img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 3rem;
+    z-index: 2;
+    position: absolute;
+    height: auto;
+    width: 12.5rem;
+
+    > img {
+        object-fit: cover;
+        width: 10rem;
+    }
+
+    p {
+        color: var(--bg-color);
+        font-size: .65rem;
+        margin-top: .6rem;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        width: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        gap: .1rem;
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: .1rem;
+        }
+    }
+
+    .corantes {
+        width: 6rem;
+    }
+    
+    .trave {
+        width: 9.5rem;
+        border: .5px solid var(--bg-color);
+        margin-top: .3rem;
+    }
+
+    #hobbycor {
+        width: 4rem;
+        margin-top: .2rem;
+    }
+
+    #ind {
+        width: 8rem;
+    }
+
+    #guaranyind {
+        width: 4.5rem;
+        margin-top: .2rem;
+    }
+}
