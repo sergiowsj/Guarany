@@ -74,6 +74,9 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    > p {
+        font-size: 1.2rem;   
+    }
 }
 
 .container {
@@ -128,22 +131,39 @@ span {
         img {
             border-radius: 50%;
             object-fit: cover;
-            margin-top: .1rem;
+            margin-top: .3rem;
+        }
+    }
+
+    .icons2 {
+        display: flex;
+        flex-direction: row;
+        width: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        gap: .1rem;
+        margin-top: -.2rem;
+
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: .3rem;
         }
     }
 
     .corantes {
-        width: 6rem;
+        width: 6.2rem;
+        margin-top: .1rem;
     }
     
     .trave {
         width: 9.5rem;
         border: .5px solid var(--bg-color);
-        margin-top: .3rem;
+        margin-top: .2rem;
     }
 
     #hobbycor {
-        width: 4rem;
+        width: 3.5rem;
         margin-top: .2rem;
     }
 
